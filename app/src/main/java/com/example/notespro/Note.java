@@ -1,12 +1,14 @@
 package com.example.notespro;
 
-
 import com.google.firebase.Timestamp;
 
 public class Note {
     String title;
     String content;
     Timestamp timestamp;
+
+    public Note() {
+    }
 
     public String getTitle() {
         return title;
@@ -32,5 +34,3 @@ public class Note {
         this.timestamp = timestamp;
     }
 }
-
-

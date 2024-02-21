@@ -12,7 +12,7 @@
         android:theme="@style/Theme.NotesPro"
         tools:targetApi="31">
         <activity
-            android:name=".NotesDetailActivity"
+            android:name=".NoteDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

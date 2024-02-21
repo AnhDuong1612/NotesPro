@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:padding="12dp"
     android:layout_marginVertical="8dp"
-    android:background="@drawable/rounded_corner"
     android:backgroundTint="@color/white"
+    android:background="@drawable/rounded_corner"
     >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Note Title"
+        android:id="@+id/note_title_text_view"
+        android:text="note title"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:layout_marginVertical="4dp"
-        android:id="@+id/note_title_text_view" />
-
+        android:layout_marginVertical="4dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This can be note content that can be long"
+        android:id="@+id/note_content_text_view"
+        android:text="this can be note content that can be long"
         android:maxLines="2"
-        android:layout_marginVertical="4dp"
-        android:textSize="17sp"
         android:ellipsize="end"
-        android:id="@+id/note_content_text_view" />
-
+        android:textSize="17sp"
+        android:layout_marginVertical="4dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Timestamp"
-        android:textSize="12sp"
-        android:layout_marginVertical="4dp"
-        android:ellipsize="end"
         android:id="@+id/note_timestamp_text_view"
-        android:gravity="end"/>
+        android:text="note title"
+        android:textSize="12sp"
+        android:gravity="right"
+        android:layout_marginVertical="4dp"/>
+
 </LinearLayout>

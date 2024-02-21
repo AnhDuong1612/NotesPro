@@ -10,22 +10,19 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.SimpleDateFormat;
+import java.util.Collection;
 
 public class Utility {
-
-    static void showToast(Context context,String message)
-    {
+    static void showToast(Context context, String message) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
 
-    static CollectionReference getCollectionReferenceForNotes()
-    {
+    static CollectionReference getCollectionReferenceForNotes() {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        return FirebaseFirestore.getInstance().collection("notes").document(currentUser.getUid()).collection("my_notes");
+        return FirebaseFirestore.getInstance().collection("notes")
+                .document(currentUser.getUid()).collection("my_notes");
     }
-
-    static String timestampToString(Timestamp timestamp)
-    {
+    static String timestampToString(Timestamp timestamp){
         return new SimpleDateFormat("MM/dd/yyyy").format(timestamp.toDate());
     }
 }

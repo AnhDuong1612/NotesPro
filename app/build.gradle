@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.notespro"
-        minSdk 31
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -34,7 +34,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.firebase:firebase-auth-ktx:21.3.0'
+    implementation 'com.google.firebase:firebase-auth:21.3.0'
     implementation 'com.google.firebase:firebase-firestore:24.1.1'
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
     testImplementation 'junit:junit:4.13.2'
